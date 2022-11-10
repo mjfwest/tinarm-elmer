@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 LABEL Name=tinarm-solver Version=0.0.1
-RUN apt-get -y update
+RUN apt-get -y update --fix-missing
 RUN apt-get install -y git gmsh
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:deadsnakes/ppa
